@@ -130,9 +130,12 @@ h1, h2, h3, h4 {
 
 
 
-/* Hamburger Menu - Revised */
+
+
+
+/* ===== Unified Hamburger Menu - Identical in Both Files ===== */
 .menu-toggle {
-    display: none; /* Hidden by default, shown on mobile */
+    display: none; /* Hidden by default */
     cursor: pointer;
     width: 30px;
     height: 24px;
@@ -149,7 +152,7 @@ h1, h2, h3, h4 {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: var(--light-color);
+    background: white;
     border-radius: 3px;
     opacity: 1;
     left: 0;
@@ -157,14 +160,6 @@ h1, h2, h3, h4 {
     transition: all 0.3s ease;
 }
 
-.navbar.scrolled .menu-toggle span {
-    background: var(--text-dark);
-}
-
-
-.menu-toggle.active span {
-    background-color: #3C7EC9 !important;
-}
 /* Top bar */
 .menu-toggle span:nth-child(1) {
     top: 0;
@@ -184,22 +179,33 @@ h1, h2, h3, h4 {
     transform-origin: left center;
 }
 
-/* When menu is open - X formation */
+/* Active/X state - identical transformation values */
 .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg);
-    top: -3px;
-    left: 4px;
+    transform: rotate(45deg) translate(4px, -1px);
+    width: 100%;
+    background: #00A1E0 ;
 }
 
 .menu-toggle.active span:nth-child(2) {
-    width: 0%;
     opacity: 0;
+    width: 0;
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg);
-    bottom: -3px;
-    left: 4px;
+    transform: rotate(-45deg) translate(4px, 1px);
+    width: 100%;
+    background: #00A1E0;
+}
+
+/* Ensure active state color matches in both files */
+.navbar.scrolled .menu-toggle span,
+.menu-toggle span {
+    background: var(--text-dark);
+}
+
+.navbar.scrolled .menu-toggle.active span,
+.menu-toggle.active span {
+   background: #00A1E0 !important;
 }
 
 
@@ -800,6 +806,7 @@ h1, h2, h3, h4 {
         transition: right 0.5s ease;
     }
 
+    
     .nav-links.active {
         right: 0;
     }
@@ -817,6 +824,9 @@ h1, h2, h3, h4 {
         display: flex;
     }
 
+    .menu-toggle span {
+    background: white;
+}
     .hero-content h1 {
         font-size: 2.5rem;
     }
