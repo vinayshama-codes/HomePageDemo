@@ -168,6 +168,7 @@ body {
     color: var(--light-color);
     text-align: center;
     padding: 150px 0 100px;
+       min-height: 700px;
 }
 
 .clients-hero .section-title {
