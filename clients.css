@@ -168,7 +168,7 @@ body {
     color: var(--light-color);
     text-align: center;
     padding: 150px 0 100px;
-       min-height: 700px;
+       min-height: 650px;
 }
 
 .clients-hero .section-title {
@@ -183,6 +183,7 @@ body {
     color: rgba(255, 255, 255, 0.9);
     margin: 30px auto;
     max-width: 700px;
+    margin-bottom: 70px;
 }
 
 /* Call-To-Action Button */
