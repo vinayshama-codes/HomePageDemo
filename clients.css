@@ -394,69 +394,58 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        right: -100%;
-        flex-direction: column;
-        width: 250px;
-        height: calc(100vh - 80px);
-        padding-top: 40px;
-        background: var(--light-color);
-        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease;
-    }
+  .menu-toggle {
+    display: flex; /* Show hamburger icon */
+    cursor: pointer;
+  }
 
-    .nav-links li {
-        margin: 20px 0;
-        padding-left: 30px;
-    }
+  .nav-links {
+    position: fixed;
+    top: 80px; /* If you have a fixed header of 80px height */
+    right: -100%; /* Hidden by default */
+    width: 250px; /* Fixed width side drawer */
+    height: calc(100vh - 80px); /* Full height minus header */
+    padding-top: 40px;
+    background-color: var(--light-color);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    transition: right 0.3s ease;
+    z-index: 9999; /* Ensure it overlays */
+  }
 
-    .nav-links.active {
-        right: 0;
-    }
+  .nav-links.active {
+    right: 0; /* Slide-in menu */
+  }
 
+  .nav-links li {
+    margin: 20px 0;
+    padding-left: 30px;
+    width: 100%;
+  }
 
+  .nav-links a {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+  }
 
+  /* Optional: Adjust hero content and section titles */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex; /* Show hamburger */
-    }
-    
-    /* Mobile menu positioning - identical values */
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        right: -100%;
-        width: 70%;
-        height: calc(100vh - 80px);
-        flex-direction: column;
-        background: var(--light-color);
-        transition: right 0.5s ease;
-    }
-    
-    .nav-links.active {
-        right: 0;
-    }
-    
-    .nav-links li {
-        margin: 20px 0;
-    }
-}
+  .carousel {
+    height: 300px;
+  }
 
-
-
-
-
-
-    
-    
-    .clients-hero .section-title {
-        font-size: 2.2rem;
-    }
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 576px) {

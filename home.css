@@ -791,54 +791,62 @@ h1, h2, h3, h4 {
         order: -1;
     }
 }
-
 @media (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background-color: var(--light-color);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.5s ease;
-    }
+  .menu-toggle {
+    display: flex; /* Show hamburger icon */
+    cursor: pointer;
+  }
+.menu-toggle span {
+  background: white;
 
-    
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links li {
-        margin: 20px 0;
-    }
-
-    .nav-links a {
-        color: var(--text-dark);
-        font-size: 1.2rem;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-toggle span {
-    background: white;
 }
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
+  .nav-links {
+    position: fixed;
+    top: 80px; /* If you have a fixed header of 80px height */
+    right: -100%; /* Hidden by default */
+    width: 250px; /* Fixed width side drawer */
+    height: calc(100vh - 80px); /* Full height minus header */
+    padding-top: 40px;
+    background-color: var(--light-color);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    transition: right 0.3s ease;
+    z-index: 9999; /* Ensure it overlays */
+    
+  }
 
-    .carousel {
-        height: 300px;
-    }
+  .nav-links.active {
+    right: 0; /* Slide-in menu */
+  }
 
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
+  .nav-links li {
+    margin: 20px 0;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+  }
+
+  /* Optional: Adjust hero content and section titles */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 576px) {
