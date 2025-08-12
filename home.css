@@ -802,23 +802,23 @@ h1, h2, h3, h4 {
 }
   .nav-links {
     position: fixed;
-    top: 80px; /* If you have a fixed header of 80px height */
-    right: -100%; /* Hidden by default */
-    width: 250px; /* Fixed width side drawer */
-    height: calc(100vh - 80px); /* Full height minus header */
+    top: 80px; 
+    right: -100%;
+    width: 250px; 
+    height: calc(100vh - 80px); 
     padding-top: 40px;
     background-color: var(--light-color);
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
     transition: right 0.3s ease;
-    z-index: 9999; /* Ensure it overlays */
+    z-index: 9999; 
     
   }
 
   .nav-links.active {
-    right: 0; /* Slide-in menu */
+    right: 0;
   }
 
   .nav-links li {
