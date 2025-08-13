@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrea it services </title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://astreait.com/newcss/owl.carousel.min.css">
     <link rel="stylesheet" href="video.css">
     <link rel="stylesheet" href="newMenu.css">
+    <link rel="stylesheet" href="master.css">
 </head>
 
 <body>
@@ -266,6 +268,70 @@
 
 
 
+<div class="layer">
+         <div class="texts_section">
+            <div class="col70">
+               <h2 class="entry-title" style="font-size: 38px; font-weight: 800; line-height: 1.3em; text-align: center; font-family: auto; position: relative; z-index: 1; color: #fff; padding-top: 25px; margin: 0;">Customer Appreciations</h2>
+               <div id="testimonial-slider" class="owl-carousel">
+                  <div class="testimonial">
+                     <div class="pic">
+                        <img src="https://astreait.com/clients/Jeff-may.png" alt="" class="img-responsive">
+                     </div>
+                     <h3 class="testimonial-info">
+                        JEFF MAY
+                        <small>Miss The Icerberg / Salesforce MVP</small>
+                     </h3>
+                     <p class="description">Like most other outsource Development teams, Astrea has talented Developers and delivers on-time and on-budget.  </p>
+                  </div>
+                  <div class="testimonial">
+                     <div class="pic">
+                        <img src="https://astreait.com/clients/sherry-murphy.png" alt="" class="img-responsive">
+                     </div>
+                     <h3 class="testimonial-info">
+                        Sherri Murphy
+                        <small> Elite Connections / CEO </small>
+                     </h3>
+                     <p class="description"> Thanks to the Astrea team we are able to work in Sales Force the way we need to. I was so upset with the way sales force was set up. </p>
+                  </div>
+                  <div class="testimonial">
+                     <div class="pic">
+                        <img src="https://astreait.com/clients/Conrad-Jooste.png" alt="" class="img-responsive">
+                     </div>
+                     <h3 class="testimonial-info">
+                        CONRAD JOOSTE
+                        <small> Excel4apps / Business Operations Manager </small>
+                     </h3>
+                     <p class="description">We have now used Astrea for a couple of projects & am very happy with their communication, speed of turnaround & accuracy of work.</p>
+                  </div>
+                  <div class="testimonial">
+                     <div class="pic">
+                        <img src="https://astreait.com/clients/clyde-williams.jpg" alt="" class="img-responsive">
+                     </div>
+                     <h3 class="testimonial-info">
+                        CLYDE WILLIAMS
+                        <small>Shonet / Director</small>
+                     </h3>
+                     <p class="description">I have worked with Naveen and his team for 2 years. The team has proven to be very knowledgable on the Salesforce. </p>
+                  </div>
+                  <div class="testimonial">
+                     <div class="pic">
+                        <img src="https://astreait.com/clients/Jessica-mcguire.png" alt="" class="img-responsive">
+                     </div>
+                     <h3 class="testimonial-info">
+                        JESSICA MCGUIRE
+                        <small>Independent Solutions Architect / Developer</small>
+                     </h3>
+                     <p class="description">We have really enjoyed working with Astrea on our Salesforce implementation project. Naveen and his team were excellent at helping us. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-column about">
@@ -303,7 +369,24 @@
     </footer>
 
 
-
+ <script src="https://astreait.com/js/jquery.min.js"></script>
+      <script src="https://astreait.com/js/owl.carousel.min.js"></script>
+      <script>
+         $(document).ready(function(){
+             $("#testimonial-slider").owlCarousel({
+                 items:1,
+                 itemsDesktop:[1000,1],
+                 itemsDesktopSmall:[979,1],
+                 itemsTablet:[768,1],
+                 pagination:true,
+                 navigation:false,
+                 navigationText:["",""],
+                 slideSpeed:1000,
+                 singleItem:true,
+                 autoPlay:true
+             });
+         });
+      </script>
 
 
    

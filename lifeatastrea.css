@@ -1,0 +1,181 @@
+/* ===== Global Reset & Base Styling ===== */
+
+
+:root {
+    --primary-color: #00A1E0;
+    --secondary-color: #E6B325;
+    --dark-color: #121212;
+    --light-color: #ffffff;
+    --text-dark: #333333;
+    --text-light: #f5f5f5;
+    --transition-speed: 0.3s;
+}
+
+/* ===== Common Styles (Navbar & Footer from careers.css) ===== */
+/* Include all the navbar and footer styles from your careers.css here */
+
+/* ===== Life At Astrea Page Specific Styles ===== */
+.life-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+                url('lifeatastreacover.png') center/cover no-repeat;
+    color: var(--light-color);
+    text-align: center;
+    padding: 150px 0 100px;
+    min-height: 650px;
+    display: flex;
+     padding-left: 15%;
+    align-items: center;
+}
+
+.life-hero .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.life-hero .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.life-content {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.life-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-text h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.content-text h3 {
+    font-size: 1.4rem;
+    color: var(--dark-color);
+    margin: 30px 0 15px;
+}
+
+.content-text p {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.life-gallery {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.life-gallery .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.life-gallery h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform var(--transition-speed) ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== Responsive Queries ===== */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-image {
+        order: -1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .life-hero {
+        padding: 100px 0 60px;
+        min-height: 400px;
+    }
+    
+    .life-hero .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .life-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .content-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-text h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .life-hero {
+        padding: 80px 0 40px;
+        min-height: 350px;
+    }
+    
+    .life-hero .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+}

@@ -175,7 +175,7 @@ document.write('                        <a class="particular_toggle2  col-11" hr
 document.write('                        <a class="col-1" href="javascript:void()"> <img class="services_toggleABOUT" src="https://astreait.com/img/down-arrow.png"> </a>'),
 document.write('                        <ul class="submenus">'),
 document.write('                            <li class="subfirst"><a href="https://astreait.com/news/">News </a></li>'),
-document.write('                            <li><a href="https://astreait.com/LifeAtAstrea/">Life At Astrea </a></li>'),
+document.write('                            <li><a href="lifeatastrea.html">Life At Astrea </a></li>'),
 document.write('                            <li><a href="https://astreait.com/contact-us/">Contact Us</a></li>'),
 document.write('                            <li><a href="https://astreait.com/leadership-team/">Leadership Team</a></li>'),
 document.write('                            <li class="sublast"><a href="partners.html">Our Partners</a>'),
