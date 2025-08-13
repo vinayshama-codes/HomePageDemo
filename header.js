@@ -178,7 +178,7 @@ document.write('                            <li class="subfirst"><a href="https:
 document.write('                            <li><a href="https://astreait.com/LifeAtAstrea/">Life At Astrea </a></li>'),
 document.write('                            <li><a href="https://astreait.com/contact-us/">Contact Us</a></li>'),
 document.write('                            <li><a href="https://astreait.com/leadership-team/">Leadership Team</a></li>'),
-document.write('                            <li class="sublast"><a href="https://astreait.com/AstreaPartners/">Our Partners</a>'),
+document.write('                            <li class="sublast"><a href="partners.html">Our Partners</a>'),
 document.write('                                <ul class="last_menu">'),
 document.write('                                    <li class="subfirst"><a href="https://astreait.com/Conga-Composer-Partnership/">Conga</a></li>'),
 document.write('                                    <li class="sublast"><a href="https://astreait.com/Apsona-Partnership/">Apsona</a></li>'),

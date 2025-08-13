@@ -1,0 +1,215 @@
+/* ===== Global Reset & Base Styling ===== */
+
+:root {
+    --primary-color: #00A1E0;
+    --secondary-color: #E6B325;
+    --dark-color: #121212;
+    --light-color: #ffffff;
+    --text-dark: #333333;
+    --text-light: #f5f5f5;
+    --transition-speed: 0.3s;
+}
+
+/* ===== Common Styles (Navbar & Footer from careers.css) ===== */
+/* Include all the navbar and footer styles from your careers.css here */
+/* This maintains consistency with your existing design system */
+
+/* ===== Partners Page Specific Styles ===== */
+.partners-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+                url('partnercover.png') center/cover no-repeat;
+    color: var(--light-color);
+    text-align: center;
+    padding: 150px 0 100px;
+    padding-left: 15%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.partners-hero .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.partners-hero .hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto 40px;
+    max-width: 700px;
+}
+
+.partners-section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.partners-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    grid-column: 1 / -1;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.section-header p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.partner-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 161, 224, 0.1);
+}
+
+.partner-logo {
+    height: 200px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.partner-content {
+    padding: 25px;
+}
+
+.partner-content h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.partner-content p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.partner-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.partner-badges span {
+    background-color: #e1f5fe;
+    color: #0288d1;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.learn-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all var(--transition-speed) ease;
+}
+
+.learn-more i {
+    margin-left: 5px;
+    transition: transform var(--transition-speed) ease;
+}
+
+.learn-more:hover {
+    color: #007AB0;
+}
+
+.learn-more:hover i {
+    transform: translateX(3px);
+}
+
+/* ===== Responsive Queries ===== */
+@media (max-width: 768px) {
+    .partners-hero {
+        padding-left: 15%;
+        padding: 100px 0 60px;
+        min-height: 400px;
+    }
+    
+    .partners-hero .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .partners-hero .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .partners-hero {
+        padding: 80px 0 40px;
+        min-height: 350px;
+    }
+    
+    .partners-hero .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .partners-hero .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .partner-content {
+        padding: 20px;
+    }
+}
