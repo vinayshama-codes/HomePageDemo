@@ -55,7 +55,8 @@
 
 .section-header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 70px;
     grid-column: 1 / -1;
 }
 
