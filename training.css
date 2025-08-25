@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #4CAFEE;
+  --secondary-color: #1E2A38;
+  --light-color: #f4f4f4;
+  --dark-color: #111;
+  --transition-speed: 0.3s;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--secondary-color);
+  background-color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: url('TrainingCover.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  height: 50vh;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+ color: black;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: black ;
+}
+
+/* Sections */
+section {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+/* Courses */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course {
+  background: var(--light-color);
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Button */
+.cta {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  transition: all var(--transition-speed) ease;
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.cta-button:hover {
+  background-color: var(--light-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

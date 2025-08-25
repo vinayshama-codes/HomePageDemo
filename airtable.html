@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airtable Development Services - Astrea IT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="careers.css"/>
+  <link rel="stylesheet" href="airtable.css"/>
+  <link rel="stylesheet" href="integration.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="ASTREALOGO.png" alt="Company Logo" class="logo-img"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="careers.html">Career</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="airtable-hero">
+
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="content-section">
+    <h2 class="section-title">Why Choose Astrea for Your Airtable Project?</h2>
+    <p class="expertise-content">
+      Airtable is a versatile cloud-based platform that combines powerful data management capabilities with an intuitive, easy-to-use interface. It allows you to organize, track, and manage your data in flexible ways, offering features like custom views, data linking, automation, and third-party integrations.
+      <br/><br/>
+      What sets Airtable apart is its cost-effectiveness and rapid development, projects that would typically take months to complete with other technologies can be finished in just weeks or even days. Airtable simplifies complex processes, saving both time and money, while empowering you to scale your operations effortlessly.
+    </p>
+  </section>
+
+  <!-- Airtable Services -->
+  <section class="content-section">
+    <h2 class="section-title">Airtable Development Services</h2>
+    <p class="expertise-content">
+      At Astrea, we harness the full power of Airtable to deliver highly tailored solutions for your business. Whether you need a robust database, advanced automations, or bespoke custom-built UIs, our certified Airtable developers provide seamless, transformative experiences.
+    </p>
+
+    <div class="integration-list">
+      <div class="integration-item">Custom UI & Dashboards – Build beautiful interfaces using Airtable’s UI + React, HTML, CSS, and JS for advanced functionality.</div>
+      <div class="integration-item">Automations & Workflows – Lightning-fast Airtable Automations, Scripts, and AI-driven workflows to save time and scale.</div>
+      <div class="integration-item">API & Third-Party Integrations – Connect Airtable with Salesforce, HubSpot, Stripe, Google Sheets, Slack, Zapier, and more.</div>
+      <div class="integration-item">Project Management & CRM Solutions – Turn Airtable into a full-fledged PM tool or CRM with automation & lead tracking.</div>
+      <div class="integration-item">Data Migration & Cleanup – Smooth migration from Excel, Sheets, or other databases with data cleaning.</div>
+      <div class="integration-item">Advanced Reporting & Analytics – Real-time dashboards inside Airtable or connected with BI tools like Tableau or Power BI.</div>
+      <div class="integration-item">Inventory & Order Management – Track inventory, orders, and logistics directly from Airtable with custom automation.</div>
+      <div class="integration-item">Client Portals & Internal Tools – Build interactive portals for clients or teams to view & update data.</div>
+      <div class="integration-item">Smart Data Management – Structure & optimize Airtable bases for collaboration and scalability.</div>
+    </div>
+  </section>
+
+  <!-- Why Work with Us -->
+  <section class="content-section">
+    <h2 class="section-title">Why Work with Us?</h2>
+    <div class="stats-container">
+      <div class="stat-item"><div class="stat-number">Certified</div><div class="stat-label">Airtable Experts</div></div>
+      <div class="stat-item"><div class="stat-number">Seamless</div><div class="stat-label">Integrations</div></div>
+      <div class="stat-item"><div class="stat-number">Custom</div><div class="stat-label">Solutions</div></div>
+      <div class="stat-item"><div class="stat-number">Future</div><div class="stat-label">Scalable</div></div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="clients.html">Case Studies</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Astrea IT Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function checkVisibility() {
+      const elements = document.querySelectorAll('.stat-item, .integration-item, .app-item');
+      elements.forEach(el => {
+        const elTop = el.getBoundingClientRect().top;
+        if (elTop < window.innerHeight - 150) el.classList.add('visible');
+      });
+    }
+    window.addEventListener('load', checkVisibility);
+    window.addEventListener('scroll', checkVisibility);
+  </script>
+</body>
+</html>
