@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateCarousel();
         });
     });
-
+/*
     let startX = 0;
 
     carousel.addEventListener('touchstart', (e) => {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (startX - endX > 50) nextSlide();
         if (endX - startX > 50) prevSlide();
     });
-
+*/
     function resetAutoSlide() {
         clearInterval(autoSlide);
         autoSlide = setInterval(nextSlide, 2000);
