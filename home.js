@@ -1,3 +1,5 @@
+/*
+
 // home.js
 
 // Navbar scroll effect
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let autoSlide;
 
     // Set initial position
-    /*
+    
     updateCarousel();
 
     function updateCarousel() {
@@ -66,14 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
-*/
+
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
             currentIndex = index;
             updateCarousel();
         });
     });
-/*
+
     let startX = 0;
 
     carousel.addEventListener('touchstart', (e) => {
@@ -85,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (startX - endX > 50) nextSlide();
         if (endX - startX > 50) prevSlide();
     });
-*/
+
     function resetAutoSlide() {
         clearInterval(autoSlide);
         autoSlide = setInterval(nextSlide, 2000);
@@ -98,3 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('resize', updateCarousel);
 });
+*/
