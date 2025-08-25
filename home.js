@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let autoSlide;
 
     // Set initial position
+    /*
     updateCarousel();
 
     function updateCarousel() {
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         resetAutoSlide();
     }
+
 
     function nextSlide() {
         currentIndex = (currentIndex + 1) % totalItems;
@@ -64,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
-
+*/
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
             currentIndex = index;
