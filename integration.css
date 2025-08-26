@@ -30,17 +30,19 @@
 
  /* Hero Section */
  .integration-hero {
-     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-         url('IntegrationCover.png') center/cover no-repeat;
-     color: var(--light-color);
-     text-align: center;
-     padding: 120px 0 80px;
-     min-height: 92vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('IntegrationCover.png') center/cover no-repeat;
+    background-attachment: fixed; 
+    color: var(--light-color);
+    text-align: center;
+    padding: 120px 0 80px;
+    min-height: 69vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
  .integration-hero h1 {
      font-size: 3.5rem;
