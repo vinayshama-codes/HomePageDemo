@@ -17,7 +17,7 @@ body {
 
 /* Hero */
 .hero {
-  background: url('TrainingCover.png') center/cover no-repeat;
+  background: url('TrainingCover2.png') center/cover no-repeat;
  background-attachment: fixed; /* 👈 keeps the image fixed */
   color: var(--light-color);
   text-align: center;
@@ -27,13 +27,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
      margin-bottom: 20px;
      font-weight: 700;
- color: black;
+ 
 }
 
 .hero-content p {
@@ -41,7 +42,7 @@ body {
      max-width: 800px;
      margin: 0 auto;
      font-weight: 300;
-  color: black ;
+
 }
 
 /* Sections */

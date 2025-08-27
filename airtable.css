@@ -10,7 +10,7 @@
 
 /* Hero Section */
 .airtable-hero {
-  background: url('AirtableCover.png') center/cover no-repeat;
+  background: url('AirtableCover2.png') center/cover no-repeat;
   background-attachment: fixed; 
   color: var(--light-color);
   text-align: center;
@@ -20,13 +20,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.87;
+ 
 }
 
 .airtable-hero h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin-bottom: 20px;
   font-weight: 700;
+  color : white;
 }
 .airtable-hero p {
   font-size: 1.4rem;
@@ -35,6 +36,3 @@
   font-weight: 300;
 }
 
-
-/* Use rest of styles (content-section, section-title, integration-list, stats, footer, responsiveness)
-   same as integration.css so theme is consistent */
