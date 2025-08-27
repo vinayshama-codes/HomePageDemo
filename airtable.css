@@ -11,16 +11,16 @@
 /* Hero Section */
 .airtable-hero {
   background: url('AirtableCover.png') center/cover no-repeat;
-  background-attachment: fixed; /* 👈 keeps the image fixed */
+  background-attachment: fixed; 
   color: var(--light-color);
   text-align: center;
   padding: 120px 0 80px;
-  min-height: 80vh;
+  min-height: 76.5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0.85;
+  opacity: 0.87;
 }
 
 .airtable-hero h1 {

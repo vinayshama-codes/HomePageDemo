@@ -22,7 +22,7 @@ body {
   color: var(--light-color);
   text-align: center;
   padding: 120px 0 80px;
-  min-height: 80vh;
+  min-height: 76.5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
