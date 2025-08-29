@@ -1,0 +1,178 @@
+/* ===== Trendy App List Styling ===== */
+
+.expertise-section {
+  padding: 80px 5%;
+  background: linear-gradient(135deg, #fdfdfd, #f5f7fa);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* App list container */
+.apps-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Each app block */
+.app-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 25px 30px;
+  text-align: left;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-item::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(0,161,224,0.15), rgba(230,179,37,0.15));
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.app-item:hover::before {
+  opacity: 1;
+}
+
+.app-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* App name with inline logo */
+.app-item h3 {
+  font-size: 1.3rem;
+  color: #111;
+  margin-bottom: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.app-inline-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain; /* or cover */
+  border-radius: 6px;  /* optional */
+}
+
+/* Underline hover effect */
+.app-item h3::after {
+  content: "";
+  display: none !important;
+  width: 0;
+  height: 3px;
+  background: #00A1E0;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+.app-item:hover h3::after {
+  width: 40%;
+}
+
+/* App description */
+.app-item p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Links container */
+.app-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;  /* keeps icon vertically aligned with buttons */
+  flex-wrap: nowrap;    /* ⬅ keeps everything in one line */
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons styled like pills */
+.app-links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Read More pill */
+.app-links .read-more {
+  background: #00A1E0;
+  color: #fff;
+}
+
+.app-links .read-more:hover {
+  background: #0086b8;
+  box-shadow: 0 4px 12px rgba(0,161,224,0.4);
+}
+
+/* AppExchange pill */
+.app-links .appexchange-link {
+  background: #fff3d6;
+  color: #b07b00;
+  border: 1px solid #e6b325;
+}
+
+.app-links .appexchange-link:hover {
+  background: #e6b325;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(230,179,37,0.4);
+}
+
+/* YouTube button - small round icon */
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ff0000;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.youtube-link:hover {
+  background: #cc0000;
+  transform: scale(1.1);
+}
+
