@@ -178,6 +178,29 @@ body {
     color: var(--accent-color);
 }
 
+
+.member-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.linkedin-link {
+  color: #0A66C2; /* LinkedIn Blue */
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #004182; /* Darker LinkedIn Blue */
+}
+
+
 /* Footer */
 .site-footer {
     background: rgba(18, 18, 18, 0.9);
