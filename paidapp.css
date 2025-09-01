@@ -143,7 +143,10 @@
   box-shadow: 0 4px 12px rgba(0,161,224,0.4);
 }
 
-/* AppExchange pill */
+
+/* Not using this now */
+/*
+
 .app-links .appexchange-link {
   background: #fff3d6;
   color: #b07b00;
@@ -156,6 +159,26 @@
   box-shadow: 0 4px 12px rgba(230,179,37,0.4);
 }
 
+*/
+
+/* AppExchange pill */
+
+.app-links .appexchange-link {
+  background: #295B8D;
+  color: #fff;
+  border: 1px solid #1f456a;
+}
+.app-links .appexchange-link:hover {
+  background: #1f456a;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(41,91,141,0.4);
+}
+
+
+
+
+
+
 /* YouTube button - small round icon */
 .youtube-link {
   display: inline-flex;
@@ -164,15 +187,15 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #ff0000;
-  color: #fff;
+  background: #fff;
+  color:#ff0000 ;
   font-size: 18px;
   margin-left: 8px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .youtube-link:hover {
-  background: #cc0000;
+  background: #fff;
   transform: scale(1.1);
 }
 
