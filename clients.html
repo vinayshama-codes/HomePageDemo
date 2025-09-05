@@ -110,6 +110,8 @@
                 </div>
             </div>
         </section>
+        
+   
     </main>
 
     <!-- Footer -->
@@ -149,6 +151,71 @@
     </footer>
 
     <script src="home.js"></script>
+
+
+    
+
+<script>
+  // Wrap in DOMContentLoaded to ensure elements exist
+  document.addEventListener('DOMContentLoaded', () => {
+    const fab = document.querySelector('[data-chatbot-fab]');
+    const popup = document.querySelector('[data-chatbot-popup]');
+    const closeBtn = document.querySelector('[data-chatbot-close]');
+
+    if (!fab || !popup || !closeBtn) {
+      console.error('Chatbot elements not found. Check HTML placement/attributes.');
+      return;
+    }
+
+    const openChat = () => {
+      popup.hidden = false;      // show popup
+      fab.hidden = true;         // hide button
+      fab.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeChat = () => {
+      popup.hidden = true;       // hide popup
+      fab.hidden = false;        // show button
+      fab.setAttribute('aria-expanded', 'false');
+    };
+
+    fab.addEventListener('click', openChat);
+    closeBtn.addEventListener('click', closeChat);
+
+    // ESC to close
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !popup.hidden) closeChat();
+    });
+  });
+</script>
+
+
+
+
+
+<!-- Floating Chat Button -->
+<button class="chatbot-fab" data-chatbot-fab aria-label="Open chat" aria-expanded="false">
+  <i class="fas fa-comment-dots" aria-hidden="true"></i>
+</button>
+
+<!-- Chatbot Popup -->
+<section class="chatbot-popup" data-chatbot-popup hidden aria-label="Chat window" role="dialog" aria-modal="true">
+  <header class="chatbot-header">
+    <span>MDT Assistant</span>
+    <button class="close-btn" data-chatbot-close aria-label="Close chat">&times;</button>
+  </header>
+  <div class="chatbot-body">
+    <iframe
+      src="https://copilotstudio.microsoft.com/environments/Default-31c24909-96eb-4559-9112-ef0712156858/bots/cr87e_mdtAssistant/webchat?__version__=2"
+      title="MDT Assistant"
+      loading="lazy"
+      referrerpolicy="no-referrer"
+      allow="clipboard-read; clipboard-write">
+    </iframe>
+  </div>
+</section>
+
+
 </body>
 
 </html>

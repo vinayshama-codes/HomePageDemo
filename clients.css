@@ -470,3 +470,83 @@ body {
         font-size: 1rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Always on top, even over nav/menus */
+.chatbot-fab,
+.chatbot-popup { z-index: 9999; }
+
+/* Floating Button */
+.chatbot-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0078d4;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Popup */
+.chatbot-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 360px;
+  max-width: 92vw;
+  height: 520px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatbot-header {
+  background: #0078d4;
+  color: #fff;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.chatbot-header .close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.chatbot-body { flex: 1; background: black; }
+.chatbot-body iframe { width: 100%; height: 100%; border: 0; }
+
+/* Safety: never let hidden items capture clicks */
+[hidden] { display: none !important; }
+
+/* Optional: prevent any full-page overlay from blocking clicks */
+body { position: relative; }
